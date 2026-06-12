@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KB Cooper Load Analyzer — User Guide</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6fa; color: #1a1d27; margin: 0; padding: 0; }
+    .header { background: #0f1117; color: #f59e0b; padding: 32px 24px 24px; text-align: center; }
+    .header h1 { font-size: 2em; margin: 0 0 6px; letter-spacing: 2px; }
+    .header p { color: #94a3b8; margin: 0; font-size: 14px; }
+    .toc { background: #fff; max-width: 860px; margin: 24px auto; border-radius: 10px; padding: 24px 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .toc h2 { font-size: 1.1em; color: #f59e0b; margin-top: 0; }
+    .toc ol { margin: 0; padding-left: 20px; }
+    .toc li { margin: 6px 0; }
+    .toc a { color: #1a73e8; text-decoration: none; }
+    .toc a:hover { text-decoration: underline; }
+    .section { background: #fff; max-width: 860px; margin: 18px auto; border-radius: 10px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .section h2 { font-size: 1.3em; color: #0f1117; border-bottom: 3px solid #f59e0b; padding-bottom: 8px; margin-top: 0; }
+    .section h3 { font-size: 1.05em; color: #f59e0b; margin-top: 24px; margin-bottom: 6px; }
+    .screenshot-box { background: #e8ecf4; border: 2px dashed #94a3b8; border-radius: 8px; padding: 40px 20px; text-align: center; color: #94a3b8; font-size: 13px; margin: 14px 0; }
+    .screenshot-box strong { display: block; font-size: 15px; color: #60748a; margin-bottom: 4px; }
+    .step { display: flex; gap: 12px; margin: 10px 0; align-items: flex-start; }
+    .step-num { background: #f59e0b; color: #0f1117; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; flex-shrink: 0; margin-top: 1px; }
+    .step-text { font-size: 14px; line-height: 1.6; }
+    .tip { background: #fffbea; border-left: 4px solid #f59e0b; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 13px; margin: 12px 0; }
+    .tip strong { color: #b45309; }
+    .warn { background: #fff1f1; border-left: 4px solid #ef4444; padding: 10px 14px; border-radius: 0 6px 6px 0; font-size: 13px; margin: 12px 0; }
+    .nav-pill { display: inline-block; background: #0f1117; color: #f59e0b; border-radius: 5px; padding: 2px 10px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0; }
+    th { background: #0f1117; color: #f59e0b; padding: 8px 12px; text-align: left; }
+    td { padding: 8px 12px; border-bottom: 1px solid #e5e7eb; }
+    tr:nth-child(even) td { background: #f9fafb; }
+    .footer { text-align: center; color: #94a3b8; font-size: 12px; padding: 24px; max-width: 860px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>KB COOPER LOAD ANALYZER</h1>
+  <p>End User Training Guide &nbsp;·&nbsp; Professional Edition</p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ol>
+    <li><a href="#getting-started">Getting Started & Subscription</a></li>
+    <li><a href="#setup">Setup — Configuring Your Profile</a></li>
+    <li><a href="#dashboard">Dashboard — Your At-a-Glance Summary</a></li>
+    <li><a href="#analyze">Analyze — Evaluating a Load</a></li>
+    <li><a href="#counteroffer">Sending a Counteroffer</a></li>
+    <li><a href="#loads">Loads — Managing Your Load List</a></li>
+    <li><a href="#triplog">Trip Log — Tracking Your Trips</a></li>
+    <li><a href="#reports">Reports & CSV Export</a></li>
+    <li><a href="#tips">Tips & Best Practices</a></li>
+  </ol>
+</div>
+
+<!-- SECTION 1: GETTING STARTED -->
+<div class="section" id="getting-started">
+  <h2>1. Getting Started &amp; Subscription</h2>
+  <p>When you first open Load Analyzer, you will be presented with a subscription screen. The app requires an active subscription to use.</p>
+
+  <div class="screenshot-box"><strong>[SCREENSHOT: Paywall / Subscription Screen]</strong>Insert screenshot of the subscription screen showing Monthly and Yearly options</div>
+
+  <h3>Choosing a Plan</h3>
+  <table>
+    <tr><th>Plan</th><th>Price</th><th>Best For</th></tr>
+    <tr><td>Monthly</td><td>$3.49 / month</td><td>Trying the app or seasonal use</td></tr>
+    <tr><td>Yearly</td><td>$29.99 / year</td><td>Regular users — saves 28% vs monthly</td></tr>
+  </table>
+
+  <div class="tip"><strong>Free Trial:</strong> Both plans include a 3-day free trial. You will not be charged until the trial period ends.</div>
+
+  <div class="step"><div class="step-num">1</div><div class="step-text">Tap your preferred plan (Monthly or Yearly) to select it.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Tap <strong>START FREE TRIAL</strong> to begin. Google Play will confirm the purchase.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">Once confirmed, the app unlocks and you are taken to the Dashboard.</div></div>
+
+  <h3>Restoring a Previous Purchase</h3>
+  <p>If you reinstall the app or switch devices, tap <strong>Restore Previous Purchase</strong> on the subscription screen to recover your existing subscription.</p>
+</div>
+
+<!-- SECTION 2: SETUP -->
+<div class="section" id="setup">
+  <h2>2. Setup — Configuring Your Profile</h2>
+  <p>Before analyzing loads, complete your setup. Tap the <span class="nav-pill">SETUP</span> tab in the navigation bar.</p>
+
+  <div class="screenshot-box"><strong>[SCREENSHOT: Setup Screen — Top]</strong>Insert screenshot of the Setup screen showing personal info fields</div>
+
+  <h3>Personal Information</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Enter your <strong>Full Name</strong> and <strong>Personal Email</strong> (required).</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Optionally enter your address details.</div></div>
+
+  <h3>Vehicle Settings</h3>
+  <div class="screenshot-box"><strong>[SCREENSHOT: Setup Screen — Vehicle Section]</strong>Insert screenshot of the vehicle configuration fields</div>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Enter your <strong>Vehicle Type / Name</strong> (e.g., Freightliner Cascadia).</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Select your default <strong>Fuel Type</strong> (Diesel or Regular).</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">Enter your <strong>MPG</strong> (miles per gallon) — this is used in all fuel cost calculations.</div></div>
+  <div class="step"><div class="step-num">4</div><div class="step-text">Select your <strong>Ownership type</strong>: Owned, Financed, Leased, or Rented.</div></div>
+  <div class="step"><div class="step-num">5</div><div class="step-text">If Financed or Leased, enter your <strong>Monthly Payment</strong> amount.</div></div>
+
+  <h3>Broker Settings</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Enter your broker's <strong>Company Name</strong>, <strong>MC Number</strong>, and <strong>Email</strong>.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Enter the <strong>Broker Fee Rate (%)</strong> — this is automatically deducted in load calculations.</div></div>
+
+  <h3>Profitability Goals</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Enter your <strong>Target Weekly Revenue</strong> to set your income goals.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Enter your <strong>Minimum Profit Margin (%)</strong> — loads below this will flag as unprofitable.</div></div>
+
+  <h3>Saving Setup</h3>
+  <div class="tip"><strong>Tip:</strong> Tap <strong>SAVE SETUP</strong> at the bottom after filling everything in. Your setup data is stored locally on your device.</div>
+</div>
+
+<!-- SECTION 3: DASHBOARD -->
+<div class="section" id="dashboard">
+  <h2>3. Dashboard — Your At-a-Glance Summary</h2>
+  <p>The <span class="nav-pill">DASH</span> tab gives you a real-time summary of your earnings and performance.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-dashboard-top.png" alt="Dashboard — Summary" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Period Filters</h3>
+  <p>At the top of the Dashboard, tap the period buttons to filter the summary:</p>
+  <table>
+    <tr><th>Button</th><th>Shows</th></tr>
+    <tr><td>THIS WEEK</td><td>Current week (Sunday–Saturday)</td></tr>
+    <tr><td>PREV WEEK</td><td>Last week's results</td></tr>
+    <tr><td>THIS MONTH</td><td>Current calendar month</td></tr>
+    <tr><td>PREV MONTH</td><td>Last month's results</td></tr>
+    <tr><td>YEAR</td><td>Current year to date</td></tr>
+  </table>
+
+  <h3>Summary Cards</h3>
+  <p>The dashboard displays the following metrics for the selected period:</p>
+  <table>
+    <tr><th>Metric</th><th>Description</th></tr>
+    <tr><td>Estimated Net Profit</td><td>Revenue minus all expenses for the period</td></tr>
+    <tr><td>Revenue</td><td>Total load rates accepted</td></tr>
+    <tr><td>Total Expenses</td><td>All costs including gas, fees, insurance</td></tr>
+    <tr><td>Gas Cost</td><td>Total fuel costs for the period</td></tr>
+    <tr><td>Broker Fees</td><td>Total broker commissions paid</td></tr>
+    <tr><td>Total Miles</td><td>All miles driven across accepted loads</td></tr>
+  </table>
+
+  <h3>Active Load Status</h3>
+  <p>Below the summary, you will see any loads currently <strong>Awaiting Pickup</strong> or <strong>In Transit</strong>.</p>
+
+  <h3>Fixed Overhead Benchmarks</h3>
+  <p>If you have vehicle payments or insurance configured in Setup, the dashboard shows your break-even point and whether you are over or under for the period.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-dashboard-bottom.png" alt="Dashboard — Fixed Overhead & Break Even" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+</div>
+
+<!-- SECTION 4: ANALYZE -->
+<div class="section" id="analyze">
+  <h2>4. Analyze — Evaluating a Load</h2>
+  <p>The <span class="nav-pill">ANALYZE</span> tab is the core of the app. Use it every time a broker or shipper offers you a load.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-analyze-profitability.png" alt="Analyze — Profitability Analysis" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Entering Load Details</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Enter the <strong>PO Number</strong> (optional) for reference.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Enter the <strong>Offered Rate ($)</strong> — what the broker is offering to pay.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">Enter <strong>Pickup City</strong> and <strong>Dropoff City</strong>.</div></div>
+  <div class="step"><div class="step-num">4</div><div class="step-text">Tap <strong>CALCULATE ROUTE MILES</strong> to automatically estimate the mileage. You can also enter miles manually.</div></div>
+  <div class="step"><div class="step-num">5</div><div class="step-text">Enter <strong>Deadhead Miles</strong> (empty miles to reach the pickup location).</div></div>
+  <div class="step"><div class="step-num">6</div><div class="step-text">Select your <strong>Fuel Type</strong> and enter the <strong>Diesel/Gas Price</strong>. Tap the GasBuddy button to look up current local prices.</div></div>
+  <div class="step"><div class="step-num">7</div><div class="step-text">Enter any additional costs: Tolls, Parking, Detention, 2-Man Support, Factoring Fee, etc.</div></div>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-analyze-results.png" alt="Analyze — Expense Breakdown" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Reading the Analysis</h3>
+  <p>After entering your data, scroll down to see the <strong>Estimated Profitability Analysis</strong>:</p>
+  <table>
+    <tr><th>Field</th><th>What It Means</th></tr>
+    <tr><td>Total Miles</td><td>Deadhead + Trip + Return miles</td></tr>
+    <tr><td>Estimated Profit</td><td>Rate minus all expenses</td></tr>
+    <tr><td>Revenue Per Mile (RPM)</td><td>How much you earn per mile driven</td></tr>
+    <tr><td>Suggested CO Rate</td><td>Minimum rate needed to meet your profit goal</td></tr>
+  </table>
+
+  <div class="tip"><strong>Tip:</strong> Green profit = load is worth taking. Red profit = load does not meet your minimum margin — consider a counteroffer.</div>
+
+  <h3>Accepting a Load</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">If the load is profitable, tap <strong>ACCEPT LOAD</strong>.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">An acceptance email draft is generated automatically — review and send it from your email app.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">The load is added to your <span class="nav-pill">LOADS</span> list as Active.</div></div>
+</div>
+
+<!-- SECTION 5: COUNTEROFFER -->
+<div class="section" id="counteroffer">
+  <h2>5. Sending a Counteroffer</h2>
+  <p>If a load is not profitable at the offered rate, use the counteroffer feature to negotiate.</p>
+
+  <div class="screenshot-box"><strong>[SCREENSHOT: Counteroffer Section]</strong>Insert screenshot of the counteroffer box showing suggested rate and email draft</div>
+
+  <div class="step"><div class="step-num">1</div><div class="step-text">After analyzing a load, tap <strong>COUNTEROFFER</strong> if the profit is below your minimum.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">The app calculates and displays the <strong>Minimum Rate Needed</strong> to meet your goal.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">Enter your desired <strong>Counteroffer Rate</strong> or leave blank to use the calculated suggestion.</div></div>
+  <div class="step"><div class="step-num">4</div><div class="step-text">Tap <strong>DRAFT COUNTEROFFER EMAIL</strong> to generate a professional email to the broker.</div></div>
+  <div class="step"><div class="step-num">5</div><div class="step-text">Review the email draft, edit if needed, then tap <strong>OPEN EMAIL CLIENT</strong> to send it.</div></div>
+
+  <div class="tip"><strong>Tip:</strong> Counteroffers expire after 48 hours automatically. If not responded to, the load moves to Declined.</div>
+</div>
+
+<!-- SECTION 6: LOADS -->
+<div class="section" id="loads">
+  <h2>6. Loads — Managing Your Load List</h2>
+  <p>The <span class="nav-pill">LOADS</span> tab shows all your loads organized by status.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-loads-active.png" alt="Loads — Active Tab" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Load Tabs</h3>
+  <table>
+    <tr><th>Tab</th><th>Shows</th></tr>
+    <tr><td>ACTIVE</td><td>Accepted loads not yet delivered + pending counteroffers</td></tr>
+    <tr><td>THIS WEEK</td><td>All loads from the current week</td></tr>
+    <tr><td>PREV WEEK</td><td>All loads from last week</td></tr>
+    <tr><td>MONTH</td><td>All loads this calendar month</td></tr>
+    <tr><td>YEAR</td><td>All loads this calendar year</td></tr>
+    <tr><td>ALL</td><td>Every load ever entered</td></tr>
+  </table>
+
+  <h3>Tracking a Load</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">From the Active tab, find your load and tap <strong>PICKED UP</strong> when you collect the freight.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Tap <strong>DELIVERED</strong> when you complete the drop-off. This stamps the time and moves the load to completed.</div></div>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-loads-all.png" alt="Loads — Load Detail" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Load Statuses</h3>
+  <table>
+    <tr><th>Status</th><th>Meaning</th></tr>
+    <tr><td>Accepted</td><td>Load confirmed, not yet picked up</td></tr>
+    <tr><td>In Transit</td><td>Picked up, en route to delivery</td></tr>
+    <tr><td>Delivered</td><td>Load completed</td></tr>
+    <tr><td>Counteroffer</td><td>Waiting on broker response to your counteroffer</td></tr>
+    <tr><td>Declined</td><td>Load was not accepted or counteroffer expired</td></tr>
+  </table>
+</div>
+
+<!-- SECTION 7: TRIP LOG -->
+<div class="section" id="triplog">
+  <h2>7. Trip Log — Tracking Your Trips</h2>
+  <p>The <span class="nav-pill">TRIP LOG</span> tab serves as a replacement for manual in-truck logs, recording your location and time for every trip.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-triplog.png" alt="Trip Log Screen" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Logging a Trip</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Tap the <strong>GPS</strong> button to automatically detect your current location, or type a location manually.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Tap <strong>LOG START</strong> to record your departure time and location.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">At your destination, tap <strong>LOG STOP</strong> to record your arrival.</div></div>
+  <div class="step"><div class="step-num">4</div><div class="step-text">The app calculates miles between your start and stop points automatically.</div></div>
+
+  <div class="tip"><strong>Tip:</strong> Allow location permissions when prompted for the GPS button to work correctly.</div>
+
+  <h3>Downloading Trip Log</h3>
+  <p>Tap <strong>DOWNLOAD TRIP LOG CSV</strong> to export your log entries as a spreadsheet for record keeping or tax purposes.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-triplog.png" alt="Trip Log — Download CSV" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+</div>
+
+<!-- SECTION 8: REPORTS -->
+<div class="section" id="reports">
+  <h2>8. Reports &amp; CSV Export</h2>
+  <p>The <span class="nav-pill">REPORTS</span> tab gives you detailed profit and expense breakdowns, and lets you export your load data.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-reports.png" alt="Reports Screen" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Report Periods</h3>
+  <p>Use the buttons at the top to select which period to view:</p>
+  <table>
+    <tr><th>Button</th><th>Shows</th></tr>
+    <tr><td>THIS WEEK</td><td>Current week's loads and profit</td></tr>
+    <tr><td>PREV WEEK</td><td>Last week — useful at week changeover</td></tr>
+    <tr><td>THIS MONTH</td><td>Current month's performance</td></tr>
+    <tr><td>PREV MONTH</td><td>Last month — useful at month-end</td></tr>
+    <tr><td>YEAR</td><td>Full year to date</td></tr>
+    <tr><td>ALL</td><td>All-time summary</td></tr>
+  </table>
+
+  <h3>Report Cards</h3>
+  <p>Each period shows an expandable card with a full breakdown including Revenue, Gas Cost, Mileage Cost, Vehicle Payment, Insurance, Broker Fees, Tolls, Parking, and Estimated Profit. It also shows whether you are over or under your break-even point.</p>
+
+  <div style="text-align:center;margin:14px 0;"><img src="screenshots/screenshot-reports.png" alt="Reports — Expense Breakdown" style="max-width:100%;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.15);"/></div>
+
+  <h3>Exporting to CSV</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">Select the period you want to export using the filter buttons.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Tap <strong>EXPORT [PERIOD] TO CSV</strong>.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">The file downloads to your device and can be opened in Excel, Google Sheets, or any spreadsheet app.</div></div>
+
+  <div class="tip"><strong>Tip:</strong> Use the CSV export regularly for tax preparation, bookkeeping, and risk analysis of your load history.</div>
+</div>
+
+<!-- SECTION 9: TIPS -->
+<div class="section" id="tips">
+  <h2>9. Tips &amp; Best Practices</h2>
+
+  <h3>Daily Workflow</h3>
+  <div class="step"><div class="step-num">1</div><div class="step-text">When a broker calls with a load offer, open the <span class="nav-pill">ANALYZE</span> tab immediately and enter the details while on the phone.</div></div>
+  <div class="step"><div class="step-num">2</div><div class="step-text">Review the profit analysis. If it meets your goal, accept. If not, use the counteroffer feature.</div></div>
+  <div class="step"><div class="step-num">3</div><div class="step-text">Use the <span class="nav-pill">TRIP LOG</span> at every pickup and delivery to keep accurate records.</div></div>
+  <div class="step"><div class="step-num">4</div><div class="step-text">Check the <span class="nav-pill">DASH</span> daily to track how you're performing against your weekly goals.</div></div>
+
+  <h3>At Week / Month End</h3>
+  <p>Use <strong>PREV WEEK</strong> or <strong>PREV MONTH</strong> on both the Dashboard and Reports tab to review your completed period before it rolls off the current view.</p>
+
+  <h3>Data Safety</h3>
+  <div class="warn"><strong>Important:</strong> All your data is stored locally on your device. If you uninstall the app or switch phones without a backup, your load history will be lost. Regularly export your data to CSV as a backup.</div>
+
+  <h3>Subscription Management</h3>
+  <p>To manage or cancel your subscription, go to your device's <strong>Google Play Store → Subscriptions</strong>. You can cancel at any time before the next billing date.</p>
+</div>
+
+<div class="footer">
+  KB Cooper Load Analyzer &nbsp;·&nbsp; KB Cooper Enterprises, Inc. &nbsp;·&nbsp; kirby.cooper@kbcooperenterprises.com<br/>
+  &copy; 2026 KB Cooper Enterprises. All rights reserved.
+</div>
+
+</body>
+</html>
